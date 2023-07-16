@@ -1,25 +1,21 @@
 # Add Two Numbers API
 
-This is a simple Flask API that performs addition of two numbers. It provides an endpoint `/add` to accept a POST request with JSON data containing `number1` and `number2` for addition.
+To understand REST APIs and REST API Documentation, let's create a simple REST API, document it, and then use it using the REST API documentation we created. 
+
+
+This is a simple REST API that performs addition of two numbers. It provides an endpoint `/add` to accept a POST request with JSON data containing `number1` and `number2` for addition.
 
 ## Requirements
 
 - Python 3.x
 - Flask (Install using `pip install flask`)
 
-## Installation
-
-1. Clone the repository or download the code.
-2. Install the required dependencies using the following command:
-
-pip install -r requirements.txt
-
 
 ## Usage
 
 1. Run the Flask server by executing the following command:
 
-python app.py
+python AddTwoNumbers.py
 
 This will start the server on `http://127.0.0.1:5000`.
 
