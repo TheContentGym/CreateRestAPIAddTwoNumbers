@@ -2,7 +2,7 @@ openapi: "3.0.0"
 info:
   title: Add Numbers API
   version: 1.0.0
-  description: This API is provided by The Content Gym's as an example - Calculus Cloud - to add two numbers. The code of the REST API is available at [GitHub](https://github.com/TheContentGym/CreateRestAPIAddTwoNumbers).
+  description: This API is provided by The Content Gym as an example - Calculus Cloud - to add two numbers. The code of the REST API is available at [GitHub](https://github.com/TheContentGym/CreateRestAPIAddTwoNumbers).
 
 servers:
   - url: http://127.0.0.1:5000
