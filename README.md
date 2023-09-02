@@ -38,23 +38,14 @@ curl -X POST \
 }' \
   http://127.0.0.1:5000/add```
 
-
-The response will be a JSON object with the addition result:
+### The response will be a JSON object with the addition result:
 
 ```{
   "result": 15
 }```
 
-If the JSON data is missing number1 or number2, or if they are not valid numbers, an error response will be returned:
+### If the JSON data is missing number1 or number2, or if they are not valid numbers, an error response will be returned:
 
 ```{
   "error": "Invalid input. Please provide number1 and number2."
 }```
-
-Contributing
-
-Contributions are welcome! If you have any improvements or suggestions, feel free to open an issue or submit a pull request.
-
-License
-
-This project is licensed under the MIT License.
