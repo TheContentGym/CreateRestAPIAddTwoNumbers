@@ -29,6 +29,7 @@ This will start the server on `http://loalhost:5000`  - you can also replace loc
 2. Make a POST request to the `/add` endpoint using your preferred method (e.g., `curl`, Postman, etc.). The request should include the JSON data with `number1` and `number2` as keys and their respective values.
 
 Example:
+
 ```bash
 curl -X POST \
   -H "Content-Type: application/json" \
@@ -36,7 +37,8 @@ curl -X POST \
     "number1": 5,
     "number2": 10
 }' \
-  http://127.0.0.1:5000/add```
+  http://127.0.0.1:5000/add
+```
 
 ### The response will be a JSON object with the addition result:
 
