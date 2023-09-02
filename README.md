@@ -1,3 +1,10 @@
+When a technical writer tries to document this REST API:
+Ravi Desai is a young technical writer who is tasked with updating the REST API documentation for Calculus Cloud (This REST API). Calculus Cloud is a simple solution that lets clients add two numbers. Ravi is clueless about where to start, but his manager helps him get in touch with the developer Bharat Iyer. Bharat explains that the documentation is in a YAML file and that Ravi can edit it using the Swagger editor. Ravi makes the required changes and commits the file to Git. He is excited to learn more about how the API reference is used by customers. Read the backstory with an instructional video of how Ravi Iyer documented this API:
+
+https://www.linkedin.com/pulse/rest-api-story-ravis-first-day-working-docs-after-moon-talwar/?trackingId=7K8JuWuzSQOsfghPQcXE%2BQ%3D%3D
+
+#Detailed Readme Of This API:
+
 # Add Two Numbers API
 
 To understand REST APIs and REST API Documentation, let's create a simple REST API, document it, and then use it using the REST API documentation we created. 
@@ -17,7 +24,7 @@ This is a simple REST API that performs addition of two numbers. It provides an 
 
 python AddTwoNumbers.py
 
-This will start the server on `http://127.0.0.1:5000`.
+This will start the server on `http://loalhost:5000`  - you can also replace localhost with your computer IP, such as: `http://127.0.0.1:5000`, if you want to access the server from another computer on the same network.
 
 2. Make a POST request to the `/add` endpoint using your preferred method (e.g., `curl`, Postman, etc.). The request should include the JSON data with `number1` and `number2` as keys and their respective values.
 
