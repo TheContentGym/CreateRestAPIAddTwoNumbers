@@ -42,12 +42,16 @@ curl -X POST \
 
 ### The response will be a JSON object with the addition result:
 
-```{
+```
+{
   "result": 15
-}```
+}
+```
 
 ### If the JSON data is missing number1 or number2, or if they are not valid numbers, an error response will be returned:
 
-```{
+```
+{
   "error": "Invalid input. Please provide number1 and number2."
-}```
+}
+```
