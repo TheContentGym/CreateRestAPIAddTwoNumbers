@@ -6,6 +6,12 @@ Ravi Desai is a young technical writer who is tasked with updating the REST API 
 
 https://www.linkedin.com/pulse/rest-api-story-ravis-first-day-working-docs-after-moon-talwar/?trackingId=7K8JuWuzSQOsfghPQcXE%2BQ%3D%3D
 
+## Watch the video:
+
+[A Technical Writer's first REST API Assignment - How Ravi Desai worked with Swagger, YAML, and Git
+](https://youtu.be/eHSX611dZ2Q?si=ToBrvz8DjZT6IUr0)
+
+
 # Detailed Readme Of This API:
 
 ## Add Two Numbers API
