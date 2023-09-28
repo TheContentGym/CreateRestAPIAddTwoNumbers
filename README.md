@@ -46,7 +46,7 @@ curl -G \
   http://127.0.0.1:5000/add
 ```
 
-This command sends a GET request to `http://127.0.0.1:5000/add` with the query parameters `number1` and `number2``, set to `5` and `10`, respectively.
+This command sends a GET request to `http://127.0.0.1:5000/add` with the query parameters `number1` and `number2`, set to `5` and `10`, respectively.
 
 The response will be a JSON object with the result:
 
