@@ -1,0 +1,34 @@
+# This is a comment.
+
+name: CI/CD Pipeline for Flask Application - Add two numbers
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        # This step clones the repository to the build server.
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+        # This step installs the necessary Python dependencies for the application.
+
+      - name: Build Flask application
+        run: python app.py build
+        # This step builds the Flask application.
+
+      - name: Run tests
+        run: python app.py test
+        # This step runs the tests for the Flask application.
+
+      - name: Deploy to production
+        uses: actions/github-script@v5
+        with:
+          script: |
+            gh workflow run deploy-to-production
+        # This step deploys the Flask application to production.
