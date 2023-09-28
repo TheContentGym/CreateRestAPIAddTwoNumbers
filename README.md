@@ -40,16 +40,15 @@ This will start the server on `http://loalhost:5000`  - you can also replace loc
 Example:
 
 ```bash
-curl -X POST \
-  -H "Content-Type: application/json" \
-  -d '{
-    "number1": 5,
-    "number2": 10
-}' \
+curl -G \
+  --data-urlencode "number1=5" \
+  --data-urlencode "number2=10" \
   http://127.0.0.1:5000/add
 ```
 
-#### The response will be a JSON object with the addition result:
+This command sends a GET request to `http://127.0.0.1:5000/add` with the query parameters `number1` and `number2``, set to `5` and `10`, respectively.
+
+The response will be a JSON object with the result:
 
 ```
 {
