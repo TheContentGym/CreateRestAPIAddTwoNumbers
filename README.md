@@ -35,7 +35,7 @@ python AddTwoNumbers.py
 
 This will start the server on `http://loalhost:5000`  - you can also replace localhost with your computer IP, such as: `http://127.0.0.1:5000`, if you want to access the server from another computer on the same network.
 
-2. Make a POST request to the `/add` endpoint using your preferred method (e.g., `curl`, Postman, etc.). The request should include the JSON data with `number1` and `number2` as keys and their respective values.
+2. Make a GET request to the `/add` endpoint using your preferred method (e.g., `curl`, Postman, etc.). The request should include the JSON data with `number1` and `number2` as keys and their respective values.
 
 Example:
 
