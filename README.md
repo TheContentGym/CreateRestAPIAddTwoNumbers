@@ -21,6 +21,7 @@ To understand REST APIs and REST API Documentation, let's create a simple REST A
 
 This is a simple REST API that performs addition of two numbers. It provides an endpoint `/add` to accept a POST request with JSON data containing `number1` and `number2` for addition.
 
+
 ### Requirements
 
 - Python 3.x
@@ -29,9 +30,11 @@ This is a simple REST API that performs addition of two numbers. It provides an 
 
 ### Usage
 
-1. Run the Flask server by executing the following command:
+1. Run the python program using the following command:
 
 python AddTwoNumbers.py
+
+**Tip**: You can also just download the program, open it in IDLE, and click **Run** > **Run Module** to get the REST API working. But, of course, you need to have python and flask installed on your computer.  
 
 This will start the server on `http://loalhost:5000`  - you can also replace localhost with your computer IP, such as: `http://127.0.0.1:5000`, if you want to access the server from another computer on the same network.
 

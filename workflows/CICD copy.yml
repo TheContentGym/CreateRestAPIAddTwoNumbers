@@ -1,34 +1,26 @@
-# This is a comment.
-
-name: CI/CD Pipeline for Flask Application - Add two numbers
+#
+name: Lint Python Code
 
 on:
   push:
     branches: [ main ]
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
         # This step clones the repository to the build server.
 
-      - name: Install Python dependencies
-        run: pip install -r requirements.txt
-        # This step installs the necessary Python dependencies for the application.
+      - name: Set up Python environment
+        run: python -m venv venv && source venv/bin/activate
+        # This step sets up a Python environment.
 
-      - name: Build Flask application
-        run: python app.py build
-        # This step builds the Flask application.
+      - name: Install Flake8
+        run: pip install flake8
+        # This step installs the Flake8 linter tool.
 
-      - name: Run tests
-        run: python app.py test
-        # This step runs the tests for the Flask application.
-
-      - name: Deploy to production
-        uses: actions/github-script@v5
-        with:
-          script: |
-            gh workflow run deploy-to-production
-        # This step deploys the Flask application to production.
+      - name: Lint code
+        run: flake8 .
+        # This step runs the Flake8 linter tool on your code.
